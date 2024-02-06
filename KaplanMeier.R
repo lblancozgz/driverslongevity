@@ -78,8 +78,6 @@ Fig1$plot <- Fig1$plot+
 Fig1$plot
 
 ##METHOD (FIELD)
-data_analysis <- data_analysis %>% 
- rename(method = `hl/bg`)
 
 survfit(Surv(total_lived, censored) ~ method, data = data_analysis, type = "kaplan-meier")
 
@@ -143,7 +141,7 @@ Fig4<- survfit(Surv(total_lived, censored)~ location + method, data_analysis, co
     facet.by = "method",
     legend.title = "Location", 
     short.panel.labs = T,
-    legend.labs = c("Vegetated", "Urban"),
+    legend.labs = c("Urban", "Vegetated"),
     ylab="Survival probability", xlab="Total of days lived",
     legend= c(0.83,0.65),
     surv.plot.heigh = 1.30,
