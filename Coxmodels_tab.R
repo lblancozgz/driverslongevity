@@ -12,7 +12,7 @@ library(coxme)
 library(lubridate)
 library(pollen)
 setwd("C:\\Users\\lblan\\OneDrive\\Escritorio\\PrimerCap\\Submission\\Datasets")
-clima <- read_excel("clima_field.xlsx",
+clima <- read_excel("clima_field2.xlsx",
                     col_types = c("date",
                                   "numeric", "numeric", "numeric", "numeric",
                                   "numeric", "numeric", "text"))
